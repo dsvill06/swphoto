@@ -4,11 +4,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,12 +18,18 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
+        <header className="bg-gradient-to-b from-[rgba(255,255,255,0.40)] to-[rgba(226,225,225,0.40)] rounded-b-2xl fixed top-0 left-0 right-0 md:fixed z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+                <nav className="shadow-md md:shadow-none  mx-auto flex justify-between items-center px-5 ">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
+                        <Image
+                            src="/images/swlogo.png"
+                            alt="Logo"
+                            width={100}
+                            height={100}
+                            className="h-20 w-20 rounded-full object-cover mr-2"
+                        />
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
@@ -39,8 +45,8 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
+                            <Link href="#contact" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                                Contact
                             </Link>
                         </li>
                     </ul>
@@ -85,8 +91,8 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                            <Link href="#contact" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                                Contact
                             </Link>
                         </li>
                     </ul>
