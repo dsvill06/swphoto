@@ -74,7 +74,7 @@ export const Contact2 = ({
       } else {
         setServerError("Failed to send message. Please try again later.");
       }
-    } catch (_) {
+    } catch {
       setServerError("An error occurred. Please try again later.");
     } finally {
       setSubmitting(false);
