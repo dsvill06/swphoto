@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 
 const Benefits: React.FC = () => {
   return (

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TypingText, TitleText } from "@/components/CustomTexts";
 import Picture from "@/components/Picture";
 import styles from "@/styles";
-import { fadeIn, staggerContainer } from "@/lib/motion";
+import { fadeIn} from "@/lib/motion";
 
 const About = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });

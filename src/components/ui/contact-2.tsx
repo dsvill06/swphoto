@@ -28,7 +28,6 @@ export const Contact2 = ({
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
   phone = "(123) 34567890",
   email = "email@example.com",
-  web = { label: "shadcnblocks.com", url: "https://shadcnblocks.com" },
 }: Contact2Props) => {
   const [form, setForm] = useState({
     firstname: "",
@@ -75,7 +74,7 @@ export const Contact2 = ({
       } else {
         setServerError("Failed to send message. Please try again later.");
       }
-    } catch (err) {
+    } catch (_) {
       setServerError("An error occurred. Please try again later.");
     } finally {
       setSubmitting(false);
