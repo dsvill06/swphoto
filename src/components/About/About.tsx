@@ -92,7 +92,7 @@ const About = () => {
               <p>
                 My photography journey began in 2008 when I picked up my first
                 camera. Since then, my passion for taking photos has grown with
-                me. I love being able to capture some of life's happiest moments
+                me. I love being able to capture some of life&apos;s happiest moments
                 colorfully. Each of my photo shoots is a safe space for
                 self-expression and being exactly who you are!
               </p>
