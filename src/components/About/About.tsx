@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TypingText, TitleText } from "@/components/CustomTexts";
 import Picture from "@/components/Picture";
 import styles from "@/styles";
-import { fadeIn} from "@/lib/motion";
+import { fadeIn } from "@/lib/motion";
 
 const About = () => {
   const isMobile = useMediaQuery({ maxWidth: 480 });
@@ -90,11 +90,11 @@ const About = () => {
               </p> */}
               <TitleText title={"About my business"} />
               <p>
-                Ea nisi consectetur consequat mollit ipsum et magna adipisicing
-                consectetur aliqua veniam sint. Cillum fugiat tempor anim ipsum
-                ipsum in cillum ullamco elit voluptate dolor duis amet fugiat.
-                Excepteur nisi amet dolore occaecat. Labore quis cupidatat irure
-                quis culpa ad occaecat sit incididunt esse.
+                My photography journey began in 2008 when I picked up my first
+                camera. Since then, my passion for taking photos has grown with
+                me. I love being able to capture some of life's happiest moments
+                colorfully. Each of my photo shoots is a safe space for
+                self-expression and being exactly who you are!
               </p>
 
               {/* <p className={`font-normal text-[16px] leading-7`}>
