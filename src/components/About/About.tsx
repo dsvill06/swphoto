@@ -33,7 +33,7 @@ const About = () => {
           >
             <Picture
               // webp="/imgs/hedge-trimming-2.webp"
-              src="/images/hero_image.jpg"
+              src="/images/about_me.jpg"
               alt="sarah"
               className="relative w-full lg:max-w-[350px] xl:max-w-[500px] min-h-[500px] h-full object-cover z-40 lg:rounded-lg shadow-xl"
             />

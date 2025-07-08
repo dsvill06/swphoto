@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero_image.jpg"
+          src="/images/hero.jpg"
           alt="Hero background"
           fill
           priority
